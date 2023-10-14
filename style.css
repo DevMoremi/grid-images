@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap);
+.body{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , 12.5rem);
+    gap: 0.5rem;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.container > div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+}
+.container > div:hover .pfps{
+    transform: scale(1.5);
+}
+.item1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.item5{
+    grid-row: span 2;
+}
+.item6{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item7{
+    grid-row: span 2;
+}
+.topic{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'outfit', sans-serif;
+    color: hsl(218, 44%, 22%);
+}
